@@ -24,6 +24,8 @@ export class LoginComponent implements OnInit {
   }
 
   login(){    
+    console.log('login');
+    
     if(this.uName.trim()!== '' && this.pwd.trim() !== '' ){
       localStorage.setItem('username',this.uName);
       this.router.navigate(['home']);
