@@ -1,10 +1,9 @@
 <nav>
   <h1 class="nav-brand"> ViaAir... </h1>
   <ul>
-    <li><a routerLink = "home">Home</a></li>
-    <li *ngIf="!!!isLoggedIn"><a routerLink="login">Login</a></li>
+    <li><a>Home</a></li>
+    <li *ngIf="!!!isLoggedIn"><a >Login</a></li>
     <li *ngIf="!!isLoggedIn"><a (click)="logout()">Logout</a></li>
-    <li><a routerLink="about">About</a></li>
+    <li><a >About</a></li>
   </ul>
 </nav>
-<router-outlet></router-outlet>
